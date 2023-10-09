@@ -1,0 +1,44 @@
+
+[{
+  "id": 1,
+  "img": "https://i.ibb.co/LkP0yyv/pubg.jpg",
+  "thumb":"https://i.ibb.co/KVf7BWC/thumb.webp",
+  "category": "Action Game",
+  "price":"1000",
+  "aos":"fade-right"
+}, {
+  "id": 2,
+  "img": "https://i.ibb.co/9TFBTkB/unnamed.jpg",
+  "thumb":"https://i.ibb.co/KVf7BWC/thumb.webp",
+  "category": "Shooter",
+  "price":"600",
+  "aos":"fade-up"
+}, {
+  "id": 3,
+  "img": "https://i.ibb.co/HNWjJry/fortnite.jpg",
+  "thumb":"https://i.ibb.co/KVf7BWC/thumb.webp",
+  "category": "Battle Royal",
+  "price":"1000",
+  "aos":"fade-left"
+}, {
+  "id": 4,
+  "img": "https://i.ibb.co/BBVmrcH/nfp.jpg",
+  "thumb":"https://i.ibb.co/KVf7BWC/thumb.webp",
+  "category": "Racing",
+  "price":"900",
+  "aos":"fade-right"
+}, {
+  "id": 5,
+  "img": "https://i.ibb.co/yp8G57y/Disney-Universe.jpg",
+  "thumb":"https://i.ibb.co/KVf7BWC/thumb.webp",
+  "category": "Classic",
+  "price":"500",
+  "aos":"fade-up"
+}, {
+  "id": 6,
+  "img": "https://i.ibb.co/KwwvFk6/images.jpg",
+  "thumb":"https://i.ibb.co/KVf7BWC/thumb.webp",
+  "category": "Survival and horror",
+  "price":"800",
+  "aos":"fade-left"
+}]
