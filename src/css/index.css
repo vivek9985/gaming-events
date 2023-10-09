@@ -25,7 +25,7 @@ body {
   background: #fafafe;
 }
 .nav-gradient {
-  background: -webkit-linear-gradient(#fc35f2, #0751be);
+  background: -webkit-linear-gradient(#fc35f2, #216de0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
