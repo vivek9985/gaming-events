@@ -11,29 +11,23 @@ const Details = () => {
   }, []);
   return (
     <div>
-      <div className="w-10/12 mx-auto mt-36">
+      <div className="w-10/12 mx-auto mt-56 md:mt-36">
         <div>
           <div className="rounded-3xl overflow-hidden">
-            <img src={detail.thumb} alt="image" className="w-full h-[550px]" />
+            <img src={detail.thumb} alt="image" className="w-full h-80 md:h-[550px]" />
           </div>
           <div className="relative">
             <img
               src={detail.img}
               alt="image"
-              className="w-60 h-60 rounded-full absolute -bottom-28 left-16 border-spacing-2 border-white border-[8px]"
+              className="w-40 h-40 md:w-60 md:h-60 rounded-full absolute -bottom-20 md:-bottom-28 left-8 md:left-16 border-spacing-2 border-white border-4 md:border-[8px]"
             />
           </div>
           <h2 className="text-center text-4xl font-bold mt-28 mb-8">
             {detail.category}
           </h2>
           <p className="font-medium text-gray-700">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-            dolore, deleniti vel quibusdam eveniet porro hic eligendi eum
-            distinctio amet iure nisi odio ad autem cumque debitis dicta quod
-            doloribus.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Accusamus, dolore, deleniti vel quibusdam eveniet porro hic eligendi
-            eum distinctio amet iure nisi odio ad autem cumque debitis dicta
-            quod doloribus.
+            {detail.desc}
           </p>
           <h6 className="mt-4 font-black">
             Ticket Price : {detail.price}TK only

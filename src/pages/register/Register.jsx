@@ -13,7 +13,7 @@ const Register = () => {
     createUser(email, password)
       .then((res) => {
         console.log(res.user);
-        toast.success("Successfully Registered!");
+        toast.success("Successfully Registered.");
       })
       .catch((error) => {
         console.error(error);
@@ -23,7 +23,7 @@ const Register = () => {
     googleLogin()
       .then((res) => {
         console.log(res.user);
-        toast.success("Successfully Logged In With Google!");
+        toast.success("Successfully Logged in with google.");
       })
       .catch((error) => {
         console.error(error);
@@ -84,10 +84,10 @@ const Register = () => {
                   Login
                 </Link>
               </p>
-              <Toaster position="bottom-center"></Toaster>
             </div>
           </div>
         </div>
+        <Toaster></Toaster>
       </div>
     </div>
   );

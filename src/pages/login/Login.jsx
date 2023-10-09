@@ -17,7 +17,7 @@ const Login = () => {
     login(email, password)
       .then((res) => {
         console.log(res.user);
-        toast.success("Successfully Logged In!");
+        toast.success("Successfully Logged in.");
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
@@ -64,10 +64,10 @@ const Login = () => {
                 </Link>
               </p>
             </form>
-            <Toaster position="bottom-center"></Toaster>
           </div>
         </div>
       </div>
+      <Toaster></Toaster>
     </div>
   );
 };

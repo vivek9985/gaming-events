@@ -9,7 +9,7 @@ const Nav = () => {
   const { users, logout } = useContext(AuthContext);
   const logoutHandle = () => {
     logout()
-      .then(toast.success("Successfully Logged Out"))
+      .then(toast.success("Successfully Logged Out."))
       .catch((error) => {
         console.error(error);
       });
@@ -91,7 +91,7 @@ const Nav = () => {
             </button>
           )}
         </div>
-        <Toaster position="bottom-center"></Toaster>
+        <Toaster></Toaster>
       </div>
     </div>
   );
