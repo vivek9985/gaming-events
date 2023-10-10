@@ -12,12 +12,10 @@ const Register = () => {
     const password = form.get("password");
 
     if (password.length < 8) {
-      toast.error("Password have to at least 8 characters!");
-    } 
-    // else if (){
-
-    // }
-    else {
+      toast.error("Password have to 8 characters!");
+    } else if (!/[@$!%*?&#]/.test(password)) {
+      toast.error("Password have to one special character!");
+    } else {
       createUser(email, password)
         .then((res) => {
           console.log(res.user);
