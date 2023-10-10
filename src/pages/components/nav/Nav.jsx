@@ -3,10 +3,10 @@ import logo from "../../../assets/logo.png";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../contextProvider/ContextProvider";
 import { FaUserCircle } from "react-icons/fa";
-import toast, { Toaster } from "react-hot-toast";
 
 const Nav = () => {
   const { users, logout } = useContext(AuthContext);
+  console.log(users?.photoURL);
   const logoutHandle = () => {
     logout()
       .then(toast.success("Successfully Logged Out."))
@@ -68,7 +68,7 @@ const Nav = () => {
                   {users?.displayName}
                 </h2>
                 <img
-                  src={users?.photoURL}
+                  src={users.photoURL}
                   alt="image"
                   className="w-[40px] h-[40px] rounded-full cursor-pointer"
                 />
@@ -92,7 +92,6 @@ const Nav = () => {
             </button>
           )}
         </div>
-        <Toaster></Toaster>
       </div>
     </div>
   );
