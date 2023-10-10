@@ -10,14 +10,23 @@ const Register = () => {
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
     const password = form.get("password");
-    createUser(email, password)
-      .then((res) => {
-        console.log(res.user);
-        toast.success("Successfully Registered.");
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+
+    if (password.length < 8) {
+      toast.error("Password have to at least 8 characters!");
+    } 
+    // else if (){
+
+    // }
+    else {
+      createUser(email, password)
+        .then((res) => {
+          console.log(res.user);
+          toast.success("Successfully Registered.");
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
   };
   const loginWithgoogle = () => {
     googleLogin()

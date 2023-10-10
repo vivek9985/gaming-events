@@ -22,6 +22,7 @@ const Login = () => {
       })
       .catch((error) => {
         console.error(error);
+        toast.error("Provide valid information!");
       });
   };
 

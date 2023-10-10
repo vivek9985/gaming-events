@@ -64,7 +64,9 @@ const Nav = () => {
           <div>
             {users?.photoURL ? (
               <div className="flex items-center gap-2 bg-gray-200 rounded-full py-1 pl-3 pr-1">
-                <h2 className="font-bold nav-gradient overflow-hidden">{users?.displayName}</h2>
+                <h2 className="font-bold nav-gradient overflow-hidden">
+                  {users?.displayName}
+                </h2>
                 <img
                   src={users?.photoURL}
                   alt="image"
@@ -72,8 +74,7 @@ const Nav = () => {
                 />
               </div>
             ) : (
-              <div className="flex items-center gap-2 lg:gap-2 bg-gray-200 rounded-full py-1 pl-3 pr-1">
-                <h2 className="font-bold nav-gradient text-base md:text-sm lg:text-lg">User Name</h2>
+              <div className="">
                 <FaUserCircle className="text-[40px] text-gray-500 cursor-pointer"></FaUserCircle>
               </div>
             )}
